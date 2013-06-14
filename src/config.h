@@ -54,7 +54,7 @@
 /* #undef ENABLE_NLS */
 
 /* Define if you want the NTLM authorization support compiled in. */
-/* #undef ENABLE_NTLM */
+#define ENABLE_NTLM 1
 
 /* Define if you want the Opie support for FTP compiled in. */
 #define ENABLE_OPIE 1
@@ -659,7 +659,7 @@
 /* #undef HAVE_LANGINFO_H */
 
 /* Define to 1 if you have the `dl' library (-ldl). */
-/* #undef HAVE_LIBDL */
+#define HAVE_LIBDL 1
 
 /* Define to 1 if you have the `eay32' library (-leay32). */
 /* #undef HAVE_LIBEAY32 */
@@ -689,7 +689,7 @@
 /* #undef HAVE_LIBSOCKET */
 
 /* Define if you have the libssl library. */
-/* #undef HAVE_LIBSSL */
+#define HAVE_LIBSSL 1
 
 /* Define to 1 if you have the `ssl32' library (-lssl32). */
 /* #undef HAVE_LIBSSL32 */
@@ -852,7 +852,7 @@
 /* #undef HAVE_RAW_DECL_EUIDACCESS */
 
 /* Define to 1 if faccessat is declared even after undefining macros. */
-/* #undef HAVE_RAW_DECL_FACCESSAT */
+#define HAVE_RAW_DECL_FACCESSAT 1
 
 /* Define to 1 if fchdir is declared even after undefining macros. */
 #define HAVE_RAW_DECL_FCHDIR 1
@@ -1044,7 +1044,7 @@
 #define HAVE_RAW_DECL_MKDIRAT 1
 
 /* Define to 1 if mkdtemp is declared even after undefining macros. */
-/* #undef HAVE_RAW_DECL_MKDTEMP */
+#define HAVE_RAW_DECL_MKDTEMP 1
 
 /* Define to 1 if mkfifo is declared even after undefining macros. */
 #define HAVE_RAW_DECL_MKFIFO 1
@@ -1387,7 +1387,7 @@
 #define HAVE_RAW_DECL_USLEEP 1
 
 /* Define to 1 if utimensat is declared even after undefining macros. */
-/* #undef HAVE_RAW_DECL_UTIMENSAT */
+#define HAVE_RAW_DECL_UTIMENSAT 1
 
 /* Define to 1 if vdprintf is declared even after undefining macros. */
 /* #undef HAVE_RAW_DECL_VDPRINTF */
@@ -1408,7 +1408,7 @@
 #define HAVE_RAW_DECL_WCRTOMB 1
 
 /* Define to 1 if wcscasecmp is declared even after undefining macros. */
-/* #undef HAVE_RAW_DECL_WCSCASECMP */
+#define HAVE_RAW_DECL_WCSCASECMP 1
 
 /* Define to 1 if wcscat is declared even after undefining macros. */
 #define HAVE_RAW_DECL_WCSCAT 1
@@ -1435,7 +1435,7 @@
 #define HAVE_RAW_DECL_WCSLEN 1
 
 /* Define to 1 if wcsncasecmp is declared even after undefining macros. */
-/* #undef HAVE_RAW_DECL_WCSNCASECMP */
+#define HAVE_RAW_DECL_WCSNCASECMP 1
 
 /* Define to 1 if wcsncat is declared even after undefining macros. */
 #define HAVE_RAW_DECL_WCSNCAT 1
