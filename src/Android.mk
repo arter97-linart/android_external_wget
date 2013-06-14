@@ -11,15 +11,20 @@ wget_SOURCES = \
 	       openssl.c http-ntlm.c
 
 LOCAL_SRC_FILES := $(wget_SOURCES)
+
 LOCAL_CFLAGS := -DWITH_CONFIG_H
 LOCAL_CFLAGS += -DSYSTEM_WGETRC=\"/system/etc/wgetrc\"
-LOCAL_CFLAGS += -I$(LOCAL_PATH)/../lib
-LOCAL_CFLAGS += -I$(LOCAL_PATH)/../../zlib
-LOCAL_CFLAGS += -I$(LOCAL_PATH)/../../openssl/include
-LOCAL_MODULE := wget
+
+LOCAL_C_INCLUDES := \
+	$(LOCAL_PATH)/../lib \
+	$(LOCAL_PATH)/../../zlib \
+	$(LOCAL_PATH)/../../openssl/include
+
 LOCAL_STATIC_LIBRARIES := libgnu
 LOCAL_SHARED_LIBRARIES := libz libssl libcrypto
-LOCAL_MODULE_PATH := $(TARGET_OUT_OPTIONAL_EXECUTABLES)
+
+LOCAL_MODULE := wget
 LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_PATH := $(TARGET_OUT_OPTIONAL_EXECUTABLES)
 
 include $(BUILD_EXECUTABLE)

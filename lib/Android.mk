@@ -19,7 +19,12 @@ libgnu_SOURCES = \
 
 
 LOCAL_SRC_FILES := $(libgnu_SOURCES)
-LOCAL_CFLAGS := -DWITH_CONFIG_H -I$(LOCAL_PATH)/../src
+
+LOCAL_CFLAGS := -DWITH_CONFIG_H
+# LOCAL_C_INCLUDES causes inclusion order issues
+LOCAL_CFLAGS += -I$(LOCAL_PATH)/../src
+
 LOCAL_MODULE := libgnu
 LOCAL_MODULE_TAGS := optional
+
 include $(BUILD_STATIC_LIBRARY)
