@@ -123,3 +123,6 @@
 
 # Force the default remote server encoding
 #remoteencoding = UTF-8
+
+# default root certs location (provided by curl)
+ca_certificate=/system/etc/security/ca-bundle.crt

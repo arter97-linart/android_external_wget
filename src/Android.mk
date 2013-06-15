@@ -12,6 +12,7 @@ wget_SOURCES = \
 
 LOCAL_SRC_FILES := $(wget_SOURCES)
 LOCAL_CFLAGS := -DWITH_CONFIG_H
+LOCAL_CFLAGS += -DSYSTEM_WGETRC=\"/system/etc/wgetrc\"
 LOCAL_CFLAGS += -I$(LOCAL_PATH)/../lib
 LOCAL_CFLAGS += -I$(LOCAL_PATH)/../../zlib
 LOCAL_CFLAGS += -I$(LOCAL_PATH)/../../openssl/include
