@@ -20,8 +20,11 @@ LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/../../zlib \
 	$(LOCAL_PATH)/../../openssl/include
 
-LOCAL_STATIC_LIBRARIES := libgnu
 LOCAL_SHARED_LIBRARIES := libz libssl libcrypto
+
+#LOCAL_STATIC_LIBRARIES := libgnu
+# XXX HACK XXX
+LOCAL_LDFLAGS := $(LOCAL_PATH)/../lib/libgnu.a
 
 LOCAL_MODULE := wget
 LOCAL_MODULE_TAGS := eng
