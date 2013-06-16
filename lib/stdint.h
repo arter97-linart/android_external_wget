@@ -179,7 +179,7 @@ typedef long int gl_int64_t;
 typedef __int64 gl_int64_t;
 #  define int64_t gl_int64_t
 #  define GL_INT64_T
-# elif 0
+# elif 1
 #  undef int64_t
 typedef long long int gl_int64_t;
 #  define int64_t gl_int64_t
@@ -200,7 +200,7 @@ typedef unsigned long int gl_uint64_t;
 typedef unsigned __int64 gl_uint64_t;
 #  define uint64_t gl_uint64_t
 #  define GL_UINT64_T
-# elif 0
+# elif 1
 #  undef uint64_t
 typedef unsigned long long int gl_uint64_t;
 #  define uint64_t gl_uint64_t
@@ -309,7 +309,7 @@ typedef unsigned long int gl_uintptr_t;
 #ifndef INTMAX_MAX
 # undef INTMAX_C
 # undef intmax_t
-# if 0 && LONG_MAX >> 30 == 1
+# if 1 && LONG_MAX >> 30 == 1
 typedef long long int gl_intmax_t;
 #  define intmax_t gl_intmax_t
 # elif defined GL_INT64_T
@@ -323,7 +323,7 @@ typedef long int gl_intmax_t;
 #ifndef UINTMAX_MAX
 # undef UINTMAX_C
 # undef uintmax_t
-# if 0 && ULONG_MAX >> 31 == 1
+# if 1 && ULONG_MAX >> 31 == 1
 typedef unsigned long long int gl_uintmax_t;
 #  define uintmax_t gl_uintmax_t
 # elif defined GL_UINT64_T
@@ -599,21 +599,21 @@ typedef int _verify_intmax_size[sizeof (intmax_t) == sizeof (uintmax_t)
 # define INT64_C(x) x##L
 #elif defined _MSC_VER
 # define INT64_C(x) x##i64
-#elif 0
+#elif 1
 # define INT64_C(x) x##LL
 #endif
 #if ULONG_MAX >> 31 >> 31 >> 1 == 1
 # define UINT64_C(x) x##UL
 #elif defined _MSC_VER
 # define UINT64_C(x) x##ui64
-#elif 0
+#elif 1
 # define UINT64_C(x) x##ULL
 #endif
 
 /* 7.18.4.2. Macros for greatest-width integer constants */
 
 #ifndef INTMAX_C
-# if 0 && LONG_MAX >> 30 == 1
+# if 1 && LONG_MAX >> 30 == 1
 #  define INTMAX_C(x)   x##LL
 # elif defined GL_INT64_T
 #  define INTMAX_C(x)   INT64_C(x)
@@ -623,7 +623,7 @@ typedef int _verify_intmax_size[sizeof (intmax_t) == sizeof (uintmax_t)
 #endif
 
 #ifndef UINTMAX_C
-# if 0 && ULONG_MAX >> 31 == 1
+# if 1 && ULONG_MAX >> 31 == 1
 #  define UINTMAX_C(x)  x##ULL
 # elif defined GL_UINT64_T
 #  define UINTMAX_C(x)  UINT64_C(x)

@@ -701,7 +701,7 @@
 #define HAVE_LIBZ 1
 
 /* Define to 1 if the system has the type 'long long int'. */
-/* #undef HAVE_LONG_LONG_INT */
+#define HAVE_LONG_LONG_INT 1
 
 /* Define to 1 if you have the `lstat' function. */
 #define HAVE_LSTAT 1
@@ -852,7 +852,7 @@
 /* #undef HAVE_RAW_DECL_EUIDACCESS */
 
 /* Define to 1 if faccessat is declared even after undefining macros. */
-#define HAVE_RAW_DECL_FACCESSAT 1
+/* #undef HAVE_RAW_DECL_FACCESSAT */
 
 /* Define to 1 if fchdir is declared even after undefining macros. */
 #define HAVE_RAW_DECL_FCHDIR 1
@@ -1044,7 +1044,7 @@
 #define HAVE_RAW_DECL_MKDIRAT 1
 
 /* Define to 1 if mkdtemp is declared even after undefining macros. */
-#define HAVE_RAW_DECL_MKDTEMP 1
+/* #undef HAVE_RAW_DECL_MKDTEMP */
 
 /* Define to 1 if mkfifo is declared even after undefining macros. */
 #define HAVE_RAW_DECL_MKFIFO 1
@@ -1387,7 +1387,7 @@
 #define HAVE_RAW_DECL_USLEEP 1
 
 /* Define to 1 if utimensat is declared even after undefining macros. */
-#define HAVE_RAW_DECL_UTIMENSAT 1
+/* #undef HAVE_RAW_DECL_UTIMENSAT */
 
 /* Define to 1 if vdprintf is declared even after undefining macros. */
 /* #undef HAVE_RAW_DECL_VDPRINTF */
@@ -1408,7 +1408,7 @@
 #define HAVE_RAW_DECL_WCRTOMB 1
 
 /* Define to 1 if wcscasecmp is declared even after undefining macros. */
-#define HAVE_RAW_DECL_WCSCASECMP 1
+/* #undef HAVE_RAW_DECL_WCSCASECMP */
 
 /* Define to 1 if wcscat is declared even after undefining macros. */
 #define HAVE_RAW_DECL_WCSCAT 1
@@ -1435,7 +1435,7 @@
 #define HAVE_RAW_DECL_WCSLEN 1
 
 /* Define to 1 if wcsncasecmp is declared even after undefining macros. */
-#define HAVE_RAW_DECL_WCSNCASECMP 1
+/* #undef HAVE_RAW_DECL_WCSNCASECMP */
 
 /* Define to 1 if wcsncat is declared even after undefining macros. */
 #define HAVE_RAW_DECL_WCSNCAT 1
@@ -1749,7 +1749,7 @@
 #define HAVE_UNISTD_H 1
 
 /* Define to 1 if the system has the type 'unsigned long long int'. */
-/* #undef HAVE_UNSIGNED_LONG_LONG_INT */
+#define HAVE_UNSIGNED_LONG_LONG_INT 1
 
 /* Define to 1 if you have the `usleep' function. */
 #define HAVE_USLEEP 1
